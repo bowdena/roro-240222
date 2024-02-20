@@ -1,2 +1,24 @@
-<h1>StaticPages#roro</h1>
-<p>Find me in app/views/static_pages/roro.html.erb</p>
+<div class="w-full flex justify-center">
+  <div class="mt-8">
+    <div class="flex">
+      <div>
+        <%= link_to '#', class: 'group relative inline-block overflow-hidden rounded-lg border p-2' do %>
+          <span class="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
+          <span class="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-red-600 transition-all duration-200 group-hover:h-full"></span>
+          <span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
+          <span class="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-red-600 transition-all duration-200 group-hover:h-full"></span>
+          <%= image_tag 'rails.png', class: 'rounded-lg w-64' %>
+        <% end %>
+      </div>
+      <div class="hidden">
+        <%= link_to '#', class: 'group relative inline-block overflow-hidden rounded-lg border p-2' do %>
+          <span class="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
+          <span class="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-red-600 transition-all duration-200 group-hover:h-full"></span>
+          <span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
+          <span class="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-red-600 transition-all duration-200 group-hover:h-full"></span>
+          <%= image_tag 'rails.png', class: 'rounded-lg w-64' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
