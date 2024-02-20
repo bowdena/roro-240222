@@ -1,8 +1,9 @@
 <div class="w-full flex justify-center">
   <div class="mt-8">
-    <div class="flex">
+    <div class="flex" data-controller="visibility">
       <div>
-        <%= link_to '#', class: 'group relative inline-block overflow-hidden rounded-lg border p-2' do %>
+        <%= link_to '#', {class: 'group relative inline-block overflow-hidden rounded-lg border p-2',
+            "data-action": "click->visibility#toggle"} do %>
           <span class="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
           <span class="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-red-600 transition-all duration-200 group-hover:h-full"></span>
           <span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
@@ -10,14 +11,27 @@
           <%= image_tag 'rails.png', class: 'rounded-lg w-64' %>
         <% end %>
       </div>
-      <div class="hidden">
-        <%= link_to '#', class: 'group relative inline-block overflow-hidden rounded-lg border p-2' do %>
+      <div data-visibility-target="infodiv" class="hidden">
+        <script src="https://gist.github.com/bowdena/1ae30789d2ce5bffb8568f886672b47a.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-full flex justify-center">
+  <div class="mt-8">
+    <div class="flex" data-controller="visibility">
+      <div>
+        <%= link_to '#', {class: 'group relative inline-block overflow-hidden rounded-lg border p-2',
+            "data-action": "click->visibility#toggle"} do %>
           <span class="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
           <span class="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-red-600 transition-all duration-200 group-hover:h-full"></span>
           <span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-red-600 transition-all duration-200 group-hover:w-full"></span>
           <span class="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-red-600 transition-all duration-200 group-hover:h-full"></span>
           <%= image_tag 'rails.png', class: 'rounded-lg w-64' %>
         <% end %>
+      </div>
+      <div data-visibility-target="infodiv" class="hidden">
+        <script src="https://gist.github.com/bowdena/c94872dab3f12bb5f47db8742222badb.js"></script>
       </div>
     </div>
   </div>
