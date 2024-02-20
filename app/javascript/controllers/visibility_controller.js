@@ -17,4 +17,12 @@ export default class extends Controller {
     this.infodivTarget.classList.toggle("hidden")
   }
 
+  nastytoggle(event){
+    const elements = document.querySelectorAll(`[id="nastyid"]`);
+    elements.forEach(element => {
+      element.classList.toggle("hidden");
+    });
+
+  }
+
 }
