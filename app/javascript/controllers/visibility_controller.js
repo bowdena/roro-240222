@@ -10,9 +10,11 @@ export default class extends Controller {
   }
 
   toggle(event){
-    event.preventDefault();
+    if(event !== undefined)
+      event.preventDefault();
     console.log("Toggling visibility")
     console.log(this.infodivTarget)
     this.infodivTarget.classList.toggle("hidden")
   }
+
 }

@@ -5,3 +5,7 @@ root 'static_pages#roro'
 ### Create the visibility stimulus controller
 rails g stimulus Visibility
 https://stimulus.hotwired.dev/reference/lifecycle-callbacks
+
+
+https://stimulus.hotwired.dev/reference/outlets
+> $ rails g stimulus outside
