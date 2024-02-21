@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'static_pages/roro'
+  get '/hotwire', to:  'static_pages#hotwire'
+  post '/submit', to: 'static_pages#submit'
+
   root 'static_pages#roro'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
