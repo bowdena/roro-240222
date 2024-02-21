@@ -4,11 +4,17 @@
 
 import { application } from "./application"
 
+import FormController from "./form_controller"
+application.register("form", FormController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
 import OutsideController from "./outside_controller"
 application.register("outside", OutsideController)
+
+import TokenController from "./token_controller"
+application.register("token", TokenController)
 
 import VisibilityController from "./visibility_controller"
 application.register("visibility", VisibilityController)

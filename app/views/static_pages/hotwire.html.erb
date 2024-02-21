@@ -1,4 +1,5 @@
-<div class="flex justify-center m-10 bg-purple-200 border-solid border-2 rounded-xl border-purple-700"><span class=""></span>
+<div class="btn-outlet flex justify-center m-10 bg-purple-200 border-solid border-2 rounded-xl border-purple-700"
+  data-controller="form"><span class=""></span>
   <%= form_with(url: '/submit', method: 'post', data: { turbo_frame: 'result' }) do |form| %>
     <turbo-frame id="result">
       <div class=" bg-blue-200 border-solid border-2 rounded-xl border-blue-700 p-10 m-10 w-full h-72 ">
@@ -24,7 +25,8 @@
         </div>
       </div>
     </turbo-frame>
-    <%= button_tag(type: 'submit', class: 'mb-10 inline-flex items-center align-top bg-blue-600 hover:bg-blue-700 py-2 px-4 text-sm font-medium text-white border border-transparent rounded-lg focus:outline-none') do %>
+    <%= button_tag(type: 'submit', class: 'mb-10 inline-flex items-center align-top bg-blue-600 hover:bg-blue-700 py-2 px-4 text-sm font-medium text-white border border-transparent rounded-lg focus:outline-none',
+        data: { 'form-target': 'nextbtn'}) do %>
       <span class="mr-5">Next</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
         <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 0 1 .75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 0 1 9.75 22.5a.75.75 0 0 1-.75-.75v-4.131A15.838 15.838 0 0 1 6.382 15H2.25a.75.75 0 0 1-.75-.75 6.75 6.75 0 0 1 7.815-6.666ZM15 6.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Z" clip-rule="evenodd" />
